@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            list-style-type: none;
+            padding: 0px;
+            color: inherit;
+            text-decoration-line: none;
+            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+        }
+
+        .navbar {
+            position: relative;
+            display: flex;
+            height: 2rem;
+            width: 100%;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            --tw-bg-opacity: 1;
+            background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+            --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+            --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+            box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+        }       
+
+        .navbar .navbarItem {
+            width: 20%;
+            --tw-bg-opacity: 1;
+            background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+            font-size: 0.75rem;
+            line-height: 1rem;
+            font-weight: 600
+        }
+
+        .navbar .navbarItem,
+        .navbar .navbarItem .navbarItemLink {
+            height: 100%;
+            text-indent: 0.5rem
+        }
+
+        .navbar .navbarItem .navbarItemLink {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            text-transform: uppercase
+        }
+
+        .navbar .navbarItem .navbarItemLink:is(:hover, :focus) {
+            cursor: pointer;
+            --tw-bg-opacity: 1;
+            background-color: rgb(243 244 246 / var(--tw-bg-opacity))
+        }
+
+        .navbarArea {
+            top: 2.5rem;
+            display: none;
+            height: 24rem;
+            width: 100%;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 0.25rem;
+            padding: 0.25rem;
+            --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+            --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+            box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+        }
+
+        .navbarArea .navbarAreaItem {
+            border-radius: 0.125rem;
+            padding: 0.25rem
+        }
+
+        .navbarArea .navbarAreaItem .navbarAreaItemLink {
+            width: 100%;
+            cursor: pointer;
+            padding-top: 0.25rem;
+            padding-bottom: 0.25rem;
+            font-size: 0.75rem;
+            line-height: 1rem;
+            font-weight: 600
+        }
+
+        .navbarArea .navbarAreaItem .navbarAreaItemLink:is(:hover, :focus) {
+            font-weight: 600
+        }
+
+        .navbarAreaChild .navbarAreaChildItem {
+            padding-left: 0.75rem;
+            padding-right: 0.75rem
+        }
+
+        .navbarAreaChild .navbarAreaChildItem .navbarAreaChildItemLink {
+            cursor: pointer;
+            font-size: 0.75rem;
+            line-height: 1rem
+        }
+
+        .navbarAreaChild .navbarAreaChildItem .navbarAreaChildItemLink:is(:hover, :focus) {
+            text-decoration-line: underline
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="navbar" id="mainNavbar">
+        <li class="navbarItem" id="nabarItemElektronik">
+            <a class="navbarItemLink" id="nabarItemLinkElektronik">Kadın</a>
+        </li>
+        <li class="navbarItem" id="nabarItemClothes">
+            <a class="navbarItemLink" id="nabarItemLinkClothes">Erkek</a>
+        </li>
+        <li class="navbarItem" id="nabarItemRug">
+            <a class="navbarItemLink" id="nabarItemLinkRug">Kozmetik</a>
+        </li>
+        <li class="navbarItem" id="nabarItemPillow">
+            <a class="navbarItemLink" id="nabarItemLinkPillow">Eloktronik</a>
+        </li>
+        <li class="navbarItem" id="nabarItemComputer">
+            <a class="navbarItemLink" id="nabarItemLinkComputer">SüperMarket</a>
+        </li>
+
+        <ul class="navbarArea" id="mainNavbarArea" block="mainNavbarArea">
+            <li class="navbarAreaItem" id="nabarItemElektronik">
+                &#8250; <a class="navbarAreaItemLink" id="nabarItemLinkElektronik">Giyim</a>
+                <ul class="navbarAreaChild" id="mainNavbarAreaChild">
+                    <li class="navbarAreaChildItem" id="nabarItemLinkClothes">&#187; <a class="navbarAreaChildItemLink"
+                            href="/elbise-x-c56">Elbise</a></li>
+                    <li class="navbarAreaChildItem" id="nabarItemLinkClothes">&#187; <a class="navbarAreaChildItemLink"
+                            href="/kadin-t-shirt-x-g1-c73">Tişört</a></li>
+                    <li class="navbarAreaChildItem" id="nabarItemLinkClothes">&#187; <a class="navbarAreaChildItemLink"
+                            href="/kadin-gomlek-x-g1-c75">Gömlek</a></li>
+                    <li class="navbarAreaChildItem" id="nabarItemLinkClothes">&#187; <a class="navbarAreaChildItemLink"
+                            href="/kadin-jean-x-g1-c120">Kot Pantolon</a></li>
+                    <li class="navbarAreaChildItem" id="nabarItemLinkClothes">&#187; <a class="navbarAreaChildItemLink"
+                            href="/kot-ceket-y-s12676">Kot Ceket</a></li>
+                    <li class="navbarAreaChildItem" id="nabarItemLinkClothes">&#187; <a class="navbarAreaChildItemLink"
+                            href="/kadin-pantolon-x-g1-c70">Pantolon</a></li>
+                    <li class="navbarAreaChildItem" id="nabarItemLinkClothes">&#187; <a class="navbarAreaChildItemLink"
+                            href="/kadin-mont-x-g1-c118">Mont</a>
+                    </li>
+                    <li class="navbarAreaChildItem" id="nabarItemLinkClothes">&#187; <a class="navbarAreaChildItemLink"
+                            href="/kadin-bluz-x-g1-c1019">Bluz</a>
+                    </li>
+                    <li class="navbarAreaChildItem" id="nabarItemLinkClothes">&#187; <a class="navbarAreaChildItemLink"
+                            href="/kadin-ceket-x-g1-c1030">Ceket</a></li>
+                    <li class="navbarAreaChildItem" id="nabarItemLinkClothes">&#187; <a class="navbarAreaChildItemLink"
+                            href="/etek-x-c69">Etek</a></li>
+                    <li class="navbarAreaChildItem" id="nabarItemLinkClothes">&#187; <a class="navbarAreaChildItemLink"
+                            href="/kadin-kazak-x-g1-c1092">Kazak</a></li>
+                    <li class="navbarAreaChildItem" id="nabarItemLinkClothes">&#187; <a class="navbarAreaChildItemLink"
+                            href="/kadin-tesettur-giyim-x-g1-c81">Tesettür</a></li>
+                    <li class="navbarAreaChildItem" id="nabarItemLinkClothes">&#187; <a class="navbarAreaChildItemLink"
+                            href="/kadin-buyuk-beden-x-g1-c80">Büyük Beden</a></li>
+
+                </ul>
+            </li>
+            <li class="navbarAreaItem" id="nabarItemClothes">
+                &#8250; <a class="navbarAreaItemLink" id="nabarItemLinkClothes">Ayakkabı</a>
+                <ul class="navbarAreaChild" id="mainNavbarAreaChild">
+                    <li class="navbarAreaChildItem" id="nabarItemLinkClothes">&#187; <a class="navbarAreaChildItemLink"
+                            href="/kadin-topuklu-ayakkabi-x-g1-c107">Topuklu Ayakkabı</a>
+                    </li>
+                    <li class="navbarAreaChildItem" id="nabarItemLinkClothes">&#187; <a class="navbarAreaChildItemLink"
+                            href="/kadin-sneaker-x-g1-c1172">Sneaker</a>                        
+                    </li>
+                    <li class="navbarAreaChildItem" id="nabarItemLinkClothes">&#187; <a class="navbarAreaChildItemLink"
+                            href="/kadin-gunluk-ayakkabi-x-g1-c1352">Günlük Ayakkabı</a></li>
+                    <li class="navbarAreaChildItem" id="nabarItemLinkClothes">&#187; <a class="navbarAreaChildItemLink"
+                            href="/kadin-babet-x-g1-c113">Babet</a>
+                    </li>
+                    <li class="navbarAreaChildItem" id="nabarItemLinkClothes">&#187; <a class="navbarAreaChildItemLink"
+                            href="/kadin-sandalet-x-g1-c111">Sandalet</a></li>
+                    <li class="navbarAreaChildItem" id="nabarItemLinkClothes">&#187; <a class="navbarAreaChildItemLink"
+                            href="/kadin-bot-x-g1-c1025">Bot</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="navbarAreaItem" id="nabarItemRug">
+                &#8250; <a class="navbarAreaItemLink" id="nabarItemLinkRug">İç Giyim</a>
+                <ul class="navbarAreaChild" id="mainNavbarAreaChild">
+                    <li class="navbarAreaChildItem" id="nabarItemLinkClothes">&#187; <a class="navbarAreaChildItemLink"
+                            href="/kadin-pijama-takimi-x-g1-c101496">Pijama Takımı</a></li>
+                    <li class="navbarAreaChildItem" id="nabarItemLinkClothes">&#187; <a class="navbarAreaChildItemLink"
+                            href="/kadin-gecelik-x-g1-c62">Gecelik</a></li>
+                    <li class="navbarAreaChildItem" id="nabarItemLinkClothes">&#187; <a class="navbarAreaChildItemLink"
+                            href="/kadin-uyku-tulumu-x-g1-c63">Uyku Tulumu</a></li>
+                    <li class="navbarAreaChildItem" id="nabarItemLinkClothes">&#187; <a class="navbarAreaChildItemLink"
+                            href="/kadin-ic-camasiri-takimlari-x-g1-c104536">İç Çamaşırı Takımları</a></li>
+                    <li class="navbarAreaChildItem" id="nabarItemLinkClothes">&#187; <a class="navbarAreaChildItemLink"
+                            href="/kadin-ozel-giyim-x-g1-c109067">Özel Giyim</a></li>
+                    <li class="navbarAreaChildItem" id="nabarItemLinkClothes">&#187; <a class="navbarAreaChildItemLink"
+                            href="/kadin-corap-x-g1-c1038">Çorap</a></li>
+                </ul>
+            </li>
+            <li class="navbarAreaItem" id="nabarItemPillow">
+                &#8250; <a class="navbarAreaItemLink" id="nabarItemLinkPillow">Aksesuar & Çanta</a>
+                <ul class="navbarAreaChild" id="mainNavbarAreaChild">
+                    <li class="navbarAreaChildItem" id="nabarItemLinkClothes">&#187; <a class="navbarAreaChildItemLink"
+                            href="/kadin-canta-x-g1-c117">Çanta</a>
+                    </li>
+                    <li class="navbarAreaChildItem" id="nabarItemLinkClothes">&#187; <a class="navbarAreaChildItemLink"
+                            href="/kadin-saat-x-g1-c34">Saat</a>
+                    </li>
+                    <li class="navbarAreaChildItem" id="nabarItemLinkClothes">&#187; <a class="navbarAreaChildItemLink"
+                            href="/kadin-taki-mucevher-x-g1-c28">Takı </a></li>
+                    <li class="navbarAreaChildItem" id="nabarItemLinkClothes">&#187; <a class="navbarAreaChildItemLink"
+                            href="/kadin-sapka-x-g1-c1181">Şapka</a></li>
+                    <li class="navbarAreaChildItem" id="nabarItemLinkClothes">&#187; <a class="navbarAreaChildItemLink"
+                            href="/kadin-cuzdan-x-g1-c1032">Cüzdan</a></li>
+                </ul>
+            </li>
+            <li class="navbarAreaItem" id="nabarItemComputer">
+                &#8250; <a class="navbarAreaItemLink" id="nabarItemLinkComputer">Lüx & Designer</a>
+                <ul class="navbarAreaChild" id="mainNavbarAreaChild">
+                    <li class="navbarAreaChildItem" id="nabarItemLinkClothes">&#187; <a class="navbarAreaChildItemLink"
+                            href="/sr?fl=tasarim-ve-luks-markalar&amp;wc=117&amp;bu=100161,100148">Lüks Çanta</a></li>
+                    <li class="navbarAreaChildItem" id="nabarItemLinkClothes">&#187; <a class="navbarAreaChildItemLink"
+                            href="/sr?fl=tasarim-ve-luks-markalar&amp;wc=82&amp;bu=100161,100148">Lüks Giyim</a></li>
+                    <li class="navbarAreaChildItem" id="nabarItemLinkClothes">&#187; <a class="navbarAreaChildItemLink"
+                            href="/sr?fl=tasarim-ve-luks-markalar&amp;wc=114&amp;bu=100161,100148">Lüks Ayakkabı</a>
+                    </li>
+                    <li class="navbarAreaChildItem" id="nabarItemLinkClothes">&#187; <a class="navbarAreaChildItemLink"
+                            href="/sr?fl=tasarim-ve-luks-markalar&amp;wc=82&amp;bu=100160">Tasarım Giyim</a></li>
+                    <li class="navbarAreaChildItem" id="nabarItemLinkClothes">&#187; <a class="navbarAreaChildItemLink"
+                            href="/sr?fl=tasarim-ve-luks-markalar&amp;wc=114&amp;bu=100160">Tasarım Ayakkabı</a></li>
+                </ul>
+            </li>
+            <li class="navbarAreaItem" id="nabarItemComputer">
+                &#8250; <a class="navbarAreaItemLink" id="nabarItemLinkComputer">Spor & Outdoor</a>
+                <ul class="navbarAreaChild" id="mainNavbarAreaChild">
+                    <li class="navbarAreaChildItem" id="nabarItemLinkClothes">&#187; <a class="navbarAreaChildItemLink"
+                            href="/kadin-spor-sweatshirt-x-g1-c101456">Sweatshirt</a></li>
+                    <li class="navbarAreaChildItem" id="nabarItemLinkClothes">&#187; <a class="navbarAreaChildItemLink"
+                            href="/kadin-spor-t-shirt-x-g1-c101459">Tişört</a></li>
+                    <li class="navbarAreaChildItem" id="nabarItemLinkClothes">&#187; <a class="navbarAreaChildItemLink"
+                            href="/kadin-spor-tayt-x-g1-c101460">Tayt</a></li>
+                    <li class="navbarAreaChildItem" id="nabarItemLinkClothes">&#187; <a class="navbarAreaChildItemLink"
+                            href="/kadin-esofman-x-g1-c1049">Eşofman</a></li>
+                    <li class="navbarAreaChildItem" id="nabarItemLinkClothes">&#187; <a class="navbarAreaChildItemLink"
+                            href="/kadin-spor-ayakkabi-x-g1-c109">Koşu Ayakkabısı </a></li>
+                    <li class="navbarAreaChildItem" id="nabarItemLinkClothes">&#187; <a class="navbarAreaChildItemLink"
+                            href="/spor-cantasi-x-c1174">Spor Çantası</a></li>
+                    <li class="navbarAreaChildItem" id="nabarItemLinkClothes">&#187; <a class="navbarAreaChildItemLink"
+                            href="/spor-aletleri-x-c104192">Spor Ekipmanları</a></li>
+                    <li class="navbarAreaChildItem" id="nabarItemLinkClothes">&#187; <a class="navbarAreaChildItemLink"
+                            href="/kadin-outdoor-ayakkabi-x-g1-c1128">Outdoor Ayakkabı</a></li>
+                    <li class="navbarAreaChildItem" id="nabarItemLinkClothes">&#187; <a class="navbarAreaChildItemLink"
+                            href="/kadin-kar-botu-x-g1-c142587">Kar Botu</a></li>
+                    <li class="navbarAreaChildItem" id="nabarItemLinkClothes">&#187; <a class="navbarAreaChildItemLink"
+                            href="/outdoor-ekipmanlari-x-c104230">Outdoor Ekipmanları</a></li>
+                    <li class="navbarAreaChildItem" id="nabarItemLinkClothes">&#187; <a class="navbarAreaChildItemLink"
+                            href="/sporcu-besini-supplementler-x-c105131">Sporcu Besinleri</a></li>
+                    <li class="navbarAreaChildItem" id="nabarItemLinkClothes">&#187; <a class="navbarAreaChildItemLink"
+                            href="/kadin-sporcu-aksesuarlari-x-g1-c104521">Sporcu Aksesuarları</a></li>
+                </ul>
+            </li>
+        </ul>
+    </ul>
+
+
+    <script>
+
+        let mainNavbar = document.getElementById("mainNavbar")
+
+        mainNavbar.addEventListener("mouseover", function () {
+            let mainNavbarArea = document.getElementById("mainNavbarArea")
+            mainNavbarArea.classList.remove("hidden")
+            mainNavbarArea.style.display = "flex"
+        });
+
+        mainNavbar.addEventListener("mouseout", function () {
+            mainNavbarArea.style.display = "none"
+        });
+    </script>
+</body>
+
+</html>
